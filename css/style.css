@@ -32,6 +32,7 @@ html {
   color: #fff;
   font-family: "Space Grotesk";
   min-height: 100vh;
+  height: 100%;
 }
 .wrapper.background {
   background: url("../img/background.png");
@@ -183,6 +184,7 @@ main.noPadding {
 }
 main.fullHeight {
   height: 100vh;
+  overflow: scroll;
 }
 main.flex {
   display: flex;
@@ -222,7 +224,8 @@ main.flex {
 }
 
 .warning {
-  height: 100%;
+  min-height: 100%;
+  overflow: scroll;
   width: 45%;
   background: url("../img/log_in_bg.jpg");
   background-size: cover;
@@ -244,7 +247,7 @@ main.flex {
   font-size: 26px;
   line-height: 150%;
   align-self: flex-start;
-  margin-bottom: 330px;
+  margin-bottom: 40px;
 }
 .warning .container .warning__sign {
   align-self: flex-start;
