@@ -9,25 +9,47 @@
         <title>Edem | Login</title>
     </head>
     <body>
-        <div class="wrapper">
-            <header class="header">
-                <nav class="navigation">
+        <div class="wrapper background">
+            <main class="fullHeight flex noPadding">
+                <section class="warning">
                     <div class="container">
-                        <div class="logo"><a href="index.html"><img src="img/logo.svg" alt=""></a></div>
-                        <div class="menu">
-                            <div class="menu__item"><a href="#about" class="menu__link">About project</a></div>
-                            <div class="menu__item"><a href="#" class="menu__link">Our currency</a></div>
-                            <div class="menu__item"><a href="#" class="menu__link">Token’s shop</a></div>
-                            <div class="menu__item"><a href="#" class="menu__link">Support</a></div>
-                            <div class="menu__item"><a href="#" class="menu__link">Dev team</a></div>
-                        </div>
-                        <div class="button"><a href="#">Log in</a></div>
+                        <div class="warning__logo"><img src="img/white_logo.svg" alt=""></div>
+                        <div class="warning__text">Log in to your profile using the login and password from your MAIS account.<br><br> Your personal data is under reliable protection.</div>
+                        <div class="warning__sign">©Endem, 2022</div>
                     </div>
-                </nav>
-            </header>
-            <main>
-                
+                </section>
+                <section class="login">
+                    <div class="container">
+                        <div class="login__title">Login with <span class="red">MAIS</span><br> account</div>
+                        <div class="login__form">
+                            <form action="" method="post" id="log_form">
+                                <label for="login">
+                                    Login
+                                    <div class="form__box">
+                                        <div class="icon"><img src="img/Vector.svg" alt=""></div>
+                                        <input type="text" name="login" placeholder="xy123dc">
+                                    </div>
+                                </label>
+                                <label for="password">
+                                    Password
+                                    <div class="form__box">
+                                        <div class="icon"><img src="img/secure.svg" alt=""></div>
+                                        <input type="password" name="password" placeholder="">
+                                    </div>
+                                </label>
+                                <div class="buttons">
+                                    <a href="index.html" class="button"><img src="img/arrow_left.svg"></a>
+                                    <input type="submit" value="Confirm">
+                                </div>
+                            </form>
+                            <div class="form__help">
+                                <p>You need help? Email us at <a href="#" class="red">support@endem.com</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
             </main>
         </div>
+        <script src="js/login.js"></script>
     </body>
 </html>

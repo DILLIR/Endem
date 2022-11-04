@@ -22,14 +22,24 @@
     box-sizing: border-box;
 }
 
+*:focus {
+    outline: none;
+}
+
 html {
     scroll-behavior: smooth;
     background: #161723;
+    
 }
 
 .wrapper{
     color: #fff;
     font-family: "Space Grotesk";
+    min-height: 100vh;
+
+    &.background{
+        background: url("../img/background.png");
+    }
 }
 
 .container{
@@ -42,9 +52,16 @@ img{
     max-width: 100%;
 }
 
+.red{
+    color: #F31818;
+}
+
 header{
-    background: url("../img/background.png");
     padding-top: 110px;
+
+    &.background{
+        background: url("../img/background.png");
+    }
 }
 
 .navigation {
@@ -85,19 +102,21 @@ header{
             border: 2px solid #F31818;
             border-radius: 13px;
             padding: 15px 24px;
-
+            cursor: pointer;
+            transition: all 0.3s;
+            color: #fff;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 19px;
+            
             &:hover{
                 background: #F31818;
-                cursor: pointer;
-                transition: all 0.3s;
             }
 
-            a{
-                color: #fff;
-                text-decoration: none;
-                font-weight: 600;
-                font-size: 16px;
-                line-height: 19px;
+            &:active{
+            color: #fff;
+
             }
         }
     }
@@ -126,9 +145,6 @@ header{
             max-width: 550px;
             margin-bottom: 32px;
 
-            .red{
-                color: #F31818;
-            }
         }
 
         .header__subtitle-gray{
@@ -189,6 +205,18 @@ header{
 
 main{
     padding: 90px 0px;
+
+    &.noPadding{
+        padding: 0;
+    }
+
+    &.fullHeight{
+        height: 100vh;
+    }
+
+    &.flex{
+        display: flex;
+    }
 }
 
 .facts{
@@ -227,5 +255,130 @@ main{
         font-size: 30px;
         line-height: 36px;
         color: #FFFFFF;
+    }
+}
+
+.warning{
+    height: 100%;
+    width: 45%;
+    background: url("../img/log_in_bg.jpg");
+    background-size: cover;
+
+    .container{
+        height: 100%;
+        width: 414px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        .warning__logo{
+            align-self: flex-start;
+            width: 500px;
+            margin-bottom: 50px;
+        }
+
+        .warning__text{
+            font-size: 26px;
+            line-height: 150%;
+            align-self: flex-start;
+            margin-bottom: 330px;
+        }
+
+        .warning__sign{
+            align-self: flex-start;
+            font-size: 22px;
+        }
+    }
+}
+
+.login{
+    height: 100%;
+    width: 55%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .login__title{
+        font-weight: 600;
+        font-size: 30px;
+        line-height: 36px;
+        color: #FFFFFF;  
+        margin-bottom: 20px;      
+    }
+
+    .login__form{
+        max-width: 300px;
+
+        form{
+            display: flex;
+            flex-direction: column;
+            max-width: 300px;
+
+            label{
+                margin-top: 15px;
+                display: flex;
+                flex-direction: column;
+                color: #9CA0AF;
+            }
+
+            .form__box{
+                background: #FFFFFF;
+                border-radius: 13px;
+                display: inline-block;
+                display: flex;
+                align-items: center;
+                padding: 13px 16px;
+                margin-top: 15px;
+
+                input{
+                    background: none;
+                    border: none;
+                    width: 100%;
+                }
+
+                .icon{
+                    margin-right: 15px;
+                }
+            }
+
+            .buttons{
+                display: flex;
+                justify-content: space-between;
+
+                input[type="submit"], .button{
+                    border: none;
+                    color: #fff;
+                    border-radius: 13px;
+                    margin-top: 30px;
+                }
+
+                .button{
+                    border: 2px solid #F31818;
+                    padding: 12px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                }
+    
+                input[type="submit"]{
+                    padding: 15px 83px;
+                    background: #F31818;
+                    cursor: pointer;
+                }
+            }
+
+        }
+    }
+
+    .form__help{
+        margin-top: 10px;
+        font-size: 12px;
+        text-align: center;
+
+        a{
+            text-decoration: none;
+            
+        }
     }
 }

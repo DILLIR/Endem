@@ -19,6 +19,10 @@
   box-sizing: border-box;
 }
 
+*:focus {
+  outline: none;
+}
+
 html {
   scroll-behavior: smooth;
   background: #161723;
@@ -27,6 +31,10 @@ html {
 .wrapper {
   color: #fff;
   font-family: "Space Grotesk";
+  min-height: 100vh;
+}
+.wrapper.background {
+  background: url("../img/background.png");
 }
 
 .container {
@@ -39,9 +47,15 @@ img {
   max-width: 100%;
 }
 
+.red {
+  color: #F31818;
+}
+
 header {
-  background: url("../img/background.png");
   padding-top: 110px;
+}
+header.background {
+  background: url("../img/background.png");
 }
 
 .navigation {
@@ -78,18 +92,19 @@ header {
   border: 2px solid #F31818;
   border-radius: 13px;
   padding: 15px 24px;
-}
-.navigation .container .button:hover {
-  background: #F31818;
   cursor: pointer;
   transition: all 0.3s;
-}
-.navigation .container .button a {
   color: #fff;
   text-decoration: none;
   font-weight: 600;
   font-size: 16px;
   line-height: 19px;
+}
+.navigation .container .button:hover {
+  background: #F31818;
+}
+.navigation .container .button:active {
+  color: #fff;
 }
 
 .header__content .container {
@@ -111,9 +126,6 @@ header {
   color: #FFFFFF;
   max-width: 550px;
   margin-bottom: 32px;
-}
-.header__content .container .header__title .red {
-  color: #F31818;
 }
 .header__content .container .header__subtitle-gray {
   color: #595763;
@@ -165,6 +177,15 @@ header {
 main {
   padding: 90px 0px;
 }
+main.noPadding {
+  padding: 0;
+}
+main.fullHeight {
+  height: 100vh;
+}
+main.flex {
+  display: flex;
+}
 
 .facts .container {
   background: #202030;
@@ -197,6 +218,112 @@ main {
   font-size: 30px;
   line-height: 36px;
   color: #FFFFFF;
+}
+
+.warning {
+  height: 100%;
+  width: 45%;
+  background: url("../img/log_in_bg.jpg");
+  background-size: cover;
+}
+.warning .container {
+  height: 100%;
+  width: 414px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.warning .container .warning__logo {
+  align-self: flex-start;
+  width: 500px;
+  margin-bottom: 50px;
+}
+.warning .container .warning__text {
+  font-size: 26px;
+  line-height: 150%;
+  align-self: flex-start;
+  margin-bottom: 330px;
+}
+.warning .container .warning__sign {
+  align-self: flex-start;
+  font-size: 22px;
+}
+
+.login {
+  height: 100%;
+  width: 55%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.login .login__title {
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 36px;
+  color: #FFFFFF;
+  margin-bottom: 20px;
+}
+.login .login__form {
+  max-width: 300px;
+}
+.login .login__form form {
+  display: flex;
+  flex-direction: column;
+  max-width: 300px;
+}
+.login .login__form form label {
+  margin-top: 15px;
+  display: flex;
+  flex-direction: column;
+  color: #9CA0AF;
+}
+.login .login__form form .form__box {
+  background: #FFFFFF;
+  border-radius: 13px;
+  display: inline-block;
+  display: flex;
+  align-items: center;
+  padding: 13px 16px;
+  margin-top: 15px;
+}
+.login .login__form form .form__box input {
+  background: none;
+  border: none;
+  width: 100%;
+}
+.login .login__form form .form__box .icon {
+  margin-right: 15px;
+}
+.login .login__form form .buttons {
+  display: flex;
+  justify-content: space-between;
+}
+.login .login__form form .buttons input[type=submit], .login .login__form form .buttons .button {
+  border: none;
+  color: #fff;
+  border-radius: 13px;
+  margin-top: 30px;
+}
+.login .login__form form .buttons .button {
+  border: 2px solid #F31818;
+  padding: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.login .login__form form .buttons input[type=submit] {
+  padding: 15px 83px;
+  background: #F31818;
+  cursor: pointer;
+}
+.login .form__help {
+  margin-top: 10px;
+  font-size: 12px;
+  text-align: center;
+}
+.login .form__help a {
+  text-decoration: none;
 }
 
 /*# sourceMappingURL=style.css.map */
