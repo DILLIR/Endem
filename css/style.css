@@ -148,6 +148,7 @@ header.background {
   padding: 22px 57px;
   display: flex;
   align-items: center;
+  justify-content: center;
   transition: all 0.3s;
   width: 250px;
 }
