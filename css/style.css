@@ -719,7 +719,7 @@ main.flex {
 }
 .challenges .challenge .challenge__name {
   text-align: left;
-  width: 55%;
+  width: 50%;
 }
 .challenges .challenge .challenge__button {
   background: #F31818;
@@ -733,6 +733,12 @@ main.flex {
   transition: all 0.3s;
   cursor: pointer;
   border: 2px solid #161723;
+}
+.challenges .challenge .challenge__award {
+  width: 100px;
+}
+.challenges .challenge .challenge__time {
+  width: 170px;
 }
 .challenges .challenge div:not(:last-child) {
   height: 100%;

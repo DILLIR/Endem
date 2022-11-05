@@ -848,7 +848,7 @@ main{
 
         .challenge__name{
             text-align: left;
-            width: 55%;
+            width: 50%;
         }
 
         .challenge__button{
@@ -864,6 +864,15 @@ main{
                 cursor: pointer;
                 border: 2px solid #161723;
             }
+        }
+
+        .challenge__award{
+            width: 100px;
+
+        }
+
+        .challenge__time{
+            width: 170px;
         }
 
 
