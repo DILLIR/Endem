@@ -680,6 +680,11 @@ main{
 
                 color: #FFFFFF;
                 text-decoration: none;
+
+                &:hover{
+                    color: #F31818;
+                    transition: color 0.3s;
+                }
             }
         }
 

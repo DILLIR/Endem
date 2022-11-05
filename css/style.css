@@ -578,6 +578,10 @@ main.flex {
   color: #FFFFFF;
   text-decoration: none;
 }
+.acc .container .acc__sidemenu .acc__submenuitem a:hover {
+  color: #F31818;
+  transition: color 0.3s;
+}
 .acc .acc__blocks {
   width: 300px;
   margin-right: auto;
