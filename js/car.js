@@ -10,7 +10,10 @@ document.forms['log_form'].addEventListener('submit', (event) => {
         }
         return response.json(); // or response.text() or whatever the server sends
     }).then((body) => {
-        console.log(body);
+        var newwin = window.open("http://127.0.0.1:5500/acc.html");
+        newwin.onload = () => {
+            newwin.acc = body;
+        };
     }).catch((error) => {
         console.log(error);
     });

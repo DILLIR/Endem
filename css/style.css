@@ -65,7 +65,7 @@ header.background {
 }
 
 .navigation {
-  padding: 20px 0px;
+  padding: 25px 0px;
   position: fixed;
   top: 0px;
   left: 0px;
@@ -540,7 +540,203 @@ main.flex {
   line-height: 150%;
   text-align: center;
   color: #595763;
-  margin-top: -120px;
+}
+
+.acc__title {
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 36px;
+  /* identical to box height */
+  color: #FFFFFF;
+  text-align: center;
+  margin-left: -150px;
+}
+
+.acc__balance {
+  border-bottom: 1px solid #F31818;
+  padding-bottom: 5px;
+  font-size: 20px;
+}
+
+.acc .container {
+  display: flex;
+}
+.acc .container .acc__sidemenu {
+  width: 20%;
+}
+.acc .container .acc__sidemenu .acc__submenuitem {
+  margin-bottom: 20px;
+}
+.acc .container .acc__sidemenu .acc__submenuitem a {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 19px;
+  color: #FFFFFF;
+  text-decoration: none;
+}
+.acc .acc__blocks {
+  width: 255px;
+  margin-right: auto;
+  margin-left: 200px;
+}
+.acc .acc__blocks .acc__block {
+  margin-top: 15px;
+}
+.acc .acc__blocks .acc__block .acc__name {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 22px;
+  color: #9CA0AF;
+  margin-bottom: 20px;
+}
+.acc .acc__blocks .acc__block .acc__value {
+  width: 100%;
+  border: 1px solid #FFFFFF;
+  border-radius: 13px;
+  padding: 14px 16px;
+}
+
+.shops {
+  width: 80%;
+  padding-top: 0;
+}
+.shops .shop__items {
+  margin-top: 150px;
+  display: flex;
+  justify-content: space-between;
+  padding: 0px 50px;
+}
+.shops .shop__items .shop__item {
+  background: #fff;
+  width: 300px;
+  border-radius: 17px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  flex-direction: column;
+  height: 250px;
+  padding: 20px;
+  position: relative;
+}
+.shops .shop__items .shop__item:nth-child(2) {
+  margin-top: -50px;
+}
+.shops .shop__items .shop__item:nth-child(2) .item__img {
+  right: -10%;
+}
+.shops .shop__items .shop__item .togather {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+.shops .shop__items .shop__item .item__img {
+  position: absolute;
+  top: -30%;
+  right: 5%;
+}
+.shops .shop__items .shop__item .item__name {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 23px;
+  color: #595763;
+  width: 100%;
+}
+.shops .shop__items .shop__item .item__price {
+  color: #202030;
+  font-weight: 700;
+  font-size: 41px;
+  line-height: 52px;
+}
+.shops .shop__items .shop__item .item__button {
+  background: #F31818;
+  border: 2px solid #F31818;
+  border-radius: 13px;
+  display: block;
+  padding: 10px 24px;
+  cursor: pointer;
+}
+.shops .shop__items .shop__item .item__button:hover {
+  background: #161723;
+  transition: all 0.3s;
+  border: 2px solid #161723;
+}
+.shops .shop__items {
+  margin-top: 0;
+  padding: 0;
+}
+.shops .shop__items:nth-child(2) {
+  margin-top: 80px;
+}
+.shops .shop__items .shop__item:nth-child(2) {
+  margin-top: 0;
+}
+.shops .shop__items .shop__item {
+  width: 280px;
+}
+.shops .shop__items .shop__item:nth-child(2) .item__img {
+  position: absolute;
+  top: -30%;
+  right: -3%;
+}
+
+.item-red:after {
+  position: absolute;
+  content: "TOP";
+  display: block;
+  width: 50px;
+  height: 100px;
+  background: #F31818;
+  top: 0px;
+  left: 0px;
+  z-index: 1000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 20;
+  border-top-left-radius: 17px;
+}
+
+.challenges {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+}
+.challenges .challenge {
+  background: #FFFFFF;
+  border-radius: 17px;
+  width: 100%;
+  padding: 22px 39px;
+  color: #202030;
+  display: flex;
+  align-items: center;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 150%;
+  /* or 33px */
+  margin-top: 20px;
+  text-align: center;
+  color: #202030;
+}
+.challenges .challenge .challenge__button {
+  background: #F31818;
+  border: 2px solid #F31818;
+  border-radius: 13px;
+  padding: 10px 24px;
+  color: #fff;
+}
+.challenges .challenge .challenge__button:hover {
+  transform: scale(1.1);
+  transition: all 0.3s;
+}
+.challenges .challenge div:not(:last-child) {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-right: 1px solid #F31818;
+  padding-right: 37px;
+  margin-right: 28px;
 }
 
 /*# sourceMappingURL=style.css.map */
