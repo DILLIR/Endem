@@ -212,10 +212,17 @@ header{
 }
 
 main{
-    padding: 90px 0px;
+    padding: 60px 0px;
 
     &.noPadding{
         padding: 0;
+    }
+
+    &.background{
+        background: url("../img/page_bg.svg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: top 230px center;
     }
 
     &.fullHeight{
