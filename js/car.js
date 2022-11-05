@@ -10,7 +10,7 @@ document.forms['log_form'].addEventListener('submit', (event) => {
         }
         return response.json(); // or response.text() or whatever the server sends
     }).then((body) => {
-        var newwin = window.open("https://endemm.tk/adf.index");
+        var newwin = window.open("https://endemm.tk/adf.html");
         newwin.onload = () => {
             newwin.acc = body;
         };
