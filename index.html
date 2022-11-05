@@ -7,7 +7,8 @@
         <link rel="shortcut icon" href="img/endemРесурс 6.svg"/>
         <link rel="stylesheet" href="css/style.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
-        <title>Edem</title>
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+        <title>Endem</title>
     </head>
     <body>
         <div class="wrapper">
@@ -41,7 +42,7 @@
             <main>
                 <section class="facts">
                     <div class="container">
-                        <div class="fact">
+                        <div class="fact" >
                             <div class="fact__icon"><img src="img/heart.svg" alt=""></div>
                             <div class="fact__name">For students from students</div>
                         </div>
@@ -67,7 +68,7 @@
                             </div>
                        </div>
                        <div class="about__phone animate__animated animate__fadeInUp">
-                            <img src="img/phone.svg" alt="">
+                            <img src="img/phone.svg" data-aos="fade-in" alt="">
                        </div>
                     </div>
                 </section>
@@ -80,14 +81,63 @@
                 </section>
                 <section class="shop">
                     <div class="container">
-                        <div class="shop__title"></div>
-                        <div class="shop__subtitle"></div>
+                        <div class="shop__title">Token’s shop</div>
+                        <div class="shop__subtitle">What to do with tokens? You can choose your store reward according to the amount of your tokens.</div>
                         <div class="shop__items">
-                            <div class="shop__item"></div>
+                            <div class="shop__item item">
+                                <div class="item__img"><img src="img/spotify.svg" alt=""></div>
+                                <div class="item__name">Subscribe to Spotify<br> 1 month</div>
+                                <div class="togather">
+                                    <div class="item__price">60 ET</div>
+                                    <div class="item__button">Buy</div>
+                                </div>
+                            </div>
+                            <div class="shop__item item">
+                                <div class="item__img"><img src="img/plane-download-clip-art-clip-art-19 1.svg" alt=""></div>
+                                <div class="item__name">Subscribe to Spotify<br> 1 month</div>
+                                <div class="togather">
+                                    <div class="item__price">60 ET</div>
+                                    <div class="item__button">Buy</div>
+                                </div>
+                            </div>
+                            <div class="shop__item item">
+                                <div class="item__img"><img src="img/hoodie.svg" alt=""></div>
+                                <div class="item__name">Subscribe to Spotify<br> 1 month</div>
+                                <div class="togather">
+                                    <div class="item__price">60 ET</div>
+                                    <div class="item__button">Buy</div>
+                                </div>
+                            </div>
                         </div>
+                        <div class="shop__subtext">and much more<br>*ET - Endem’s tokens</div>
+                    </div>
+                </section>
+                <section class="banner">
+                    <div class="container">
+                        <h3>You need help? Email us at <span class="red">support@endem.com</span></h3>
+                    </div>
+                </section>
+                <section class="team">
+                    <div class="container">
+                        <div class="team__content">
+                            <div class="team__title">Our team</div>
+                            <div class="team__text">We, a young “Argon” team of 4 enthusiastic developers, decided by this project to give university students a new motivation to study and be not just students, but also a part of the university, to do good deeds, encouraging them with pleasant bonuses.</div>
+                            <a href="car.html" class="team__button">Try endem</a>
+                        </div>
+                        <div class="team__img"><img src="img/team.svg" alt=""></div>
                     </div>
                 </section>
             </main>
+            <footer class="footer">
+                <div class="container">
+                    <p>©All rights reserved by the copyright holder<br>
+                        Powered by Argon, 2022</p>
+                </div>
+            </footer>
         </div>
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script>
+          AOS.init();
+        </script>
     </body>
 </html>
