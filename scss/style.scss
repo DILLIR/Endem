@@ -49,6 +49,12 @@ html {
     position: relative;
 }
 
+@media screen and (max-width: 1140px){
+    .container{
+        padding: 0px 10px;
+    }
+}
+
 img{
     max-width: 100%;
 }
@@ -418,5 +424,31 @@ main{
         img:not(:last-child){
             margin-right: 38px;
         }
+    }
+}
+
+.currency{
+    text-align: center;
+    padding: 90px 0px;
+    background: url("../img/currency_bg.svg"), #202030;
+    background-repeat: no-repeat;
+    background-position: center center;
+
+    .currency__title{
+        font-weight: 600;
+        font-size: 32px;
+        line-height: 38px;
+        color: #FFFFFF;
+        margin-bottom: 42px;
+    }
+
+    .currency__text{
+        font-weight: 400;
+        font-size: 22px;
+        line-height: 150%;
+        text-align: center;
+        color: #FFFFFF;
+        max-width: 604px;
+        margin: 30px auto;
     }
 }
