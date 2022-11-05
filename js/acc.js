@@ -2,7 +2,15 @@ function add(){
     let acc__value = document.querySelectorAll(".acc__value");
     let balance = document.querySelector(".acc__balance");
 
-    balance.innerHTML = acc.data.balance + " ET";
+    if(acc.data.balance != 0){
+        try{
+            balance.innerHTML = acc.data.balance + " ET";
+        }catch(error){
+            console.error(error);
+        }
+    }else{
+        balance.innerHTML = "0 ET";
+    }
 
     console.log(acc);
     

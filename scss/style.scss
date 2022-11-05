@@ -843,10 +843,13 @@ main{
         line-height: 150%;
         /* or 33px */
         margin-top: 20px;
-
+        color: #202030;
         text-align: center;
 
-        color: #202030;
+        .challenge__name{
+            text-align: left;
+            width: 55%;
+        }
 
         .challenge__button{
             background: #F31818;
@@ -856,8 +859,10 @@ main{
             color: #fff;
 
             &:hover{
-                transform: scale(1.1);
+                background: #161723;
                 transition: all 0.3s;
+                cursor: pointer;
+                border: 2px solid #161723;
             }
         }
 

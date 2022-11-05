@@ -236,7 +236,6 @@ main.flex {
 
 .warning {
   min-height: 100%;
-  overflow: scroll;
   width: 45%;
   background: url("../img/log_in_bg.jpg");
   background-size: cover;
@@ -715,8 +714,12 @@ main.flex {
   line-height: 150%;
   /* or 33px */
   margin-top: 20px;
-  text-align: center;
   color: #202030;
+  text-align: center;
+}
+.challenges .challenge .challenge__name {
+  text-align: left;
+  width: 55%;
 }
 .challenges .challenge .challenge__button {
   background: #F31818;
@@ -726,8 +729,10 @@ main.flex {
   color: #fff;
 }
 .challenges .challenge .challenge__button:hover {
-  transform: scale(1.1);
+  background: #161723;
   transition: all 0.3s;
+  cursor: pointer;
+  border: 2px solid #161723;
 }
 .challenges .challenge div:not(:last-child) {
   height: 100%;
